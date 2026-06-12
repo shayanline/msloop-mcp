@@ -1,0 +1,59 @@
+{
+  "name": "msloop-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Microsoft Loop. No app registration required, uses your existing Loop web session to list workspaces and read pages.",
+  "keywords": [
+    "mcp",
+    "loop",
+    "microsoft",
+    "microsoft-loop",
+    "model-context-protocol"
+  ],
+  "author": "Shayan Khaksar <shayan.khaksar@theaccessgroup.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "msloop-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "playwright": "^1.52.0",
+    "sql.js": "^1.14.1",
+    "turndown": "^7.2.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/sql.js": "^1.4.11",
+    "@types/turndown": "^5.0.5",
+    "@vitest/coverage-v8": "^4.1.8",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.8"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shayanline/msloop-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shayanline/msloop-mcp/issues"
+  },
+  "homepage": "https://github.com/shayanline/msloop-mcp#readme"
+}
