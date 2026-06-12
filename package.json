@@ -1,6 +1,6 @@
 {
   "name": "msloop-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for Microsoft Loop. No app registration required, uses your existing Loop web session to list workspaces and read pages.",
   "keywords": [
     "mcp",
@@ -9,7 +9,7 @@
     "microsoft-loop",
     "model-context-protocol"
   ],
-  "author": "Shayan Khaksar <shayan.khaksar@theaccessgroup.com>",
+  "author": "Shayan Khaksar <sh.khaksar95@gmail.com>",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",

@@ -11,7 +11,7 @@ import { registerSearchTools } from './tools/search-tools.js';
 export function createServer(): McpServer {
   const server = new McpServer({
     name: 'msloop-mcp',
-    version: '0.1.1',
+    version: '0.1.2',
   });
 
   registerAuthTools(server);
