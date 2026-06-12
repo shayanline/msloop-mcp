@@ -1,6 +1,6 @@
 {
   "name": "msloop-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for Microsoft Loop. No app registration required, uses your existing Loop web session to list workspaces and read pages.",
   "keywords": [
     "mcp",
